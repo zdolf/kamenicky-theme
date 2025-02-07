@@ -1,0 +1,80 @@
+items:
+    -
+        title: 'Gabionové zdi a ploty'
+        nesting: null
+        type: page
+        url: null
+        code: ''
+        reference: '3'
+        cmsPage: page
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Výkopové práce'
+        nesting: null
+        type: page
+        url: null
+        code: ''
+        reference: '1'
+        cmsPage: page
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Dlaždičské práce'
+        nesting: null
+        type: page
+        url: null
+        code: ''
+        reference: '2'
+        cmsPage: page
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Zahradnické práce'
+        nesting: null
+        type: page
+        url: null
+        code: ''
+        reference: '4'
+        cmsPage: page
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Reference
+        nesting: null
+        type: page
+        url: null
+        code: ''
+        reference: '5'
+        cmsPage: page
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kontakt
+        nesting: null
+        type: page
+        url: null
+        code: ''
+        reference: '12'
+        cmsPage: page
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Main Menu'

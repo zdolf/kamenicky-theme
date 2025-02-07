@@ -1,0 +1,31 @@
+<div class="post post-card mt-3">
+    <h2 class="title text-primary">
+        {{ item.title }}
+    </h2>
+
+    <div id="post-{{ item.id }}" class="row row-cols-1 row-cols-lg-4">
+        {% for image in images %}
+            <a href="{{ image.path }}" title="{{ image.description }}" class="col img mb-0 position-relative overflow-hidden{% if loop.index > 4 %} visually-hidden{% endif %}">
+
+{#            {% if loop.index < 5 %}#}
+                {% if image.path %}
+                    <img src="{{ image.thumb(600, 600, {"mode": "crop"}) }}" alt="{{ image.description }}" class="img-fluid w-100{% if loop.index > 4 %} visually-hidden{% endif %}">
+                {% else %}
+                    <img src="{{ image|media }}" alt="{{ image.description }}" class="img-fluid w-100{% if loop.index > 4 %} visually-hidden{% endif %}">
+                {% endif %}
+{#            {% else %}#}
+{#                img {{ loop.index }}#}
+{#            {% endif %}#}
+            </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% put scripts %}
+    <script>
+        lightGallery(document.getElementById("post-{{ item.id }}"), {
+            plugins: [lgZoom, lgThumbnail],
+            speed: 500,
+        });
+    </script>
+{% endput %}
