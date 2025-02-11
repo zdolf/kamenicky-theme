@@ -15,6 +15,8 @@
     "/css/icons.css": "/css/icons.css",
     "/fonts/OpenSans-Italic-Variable.ttf": "/fonts/OpenSans-Italic-Variable.ttf",
     "/fonts/OpenSans-Variable.ttf": "/fonts/OpenSans-Variable.ttf",
+    "/fonts/RobotoCondensed-Italic-VariableFont_wght.ttf": "/fonts/RobotoCondensed-Italic-VariableFont_wght.ttf",
+    "/fonts/RobotoCondensed-VariableFont_wght.ttf": "/fonts/RobotoCondensed-VariableFont_wght.ttf",
     "/fonts/lg.svg": "/fonts/lg.svg",
     "/fonts/lg.ttf": "/fonts/lg.ttf",
     "/fonts/lg.woff": "/fonts/lg.woff",
@@ -23,6 +25,6 @@
     "/css/Phosphor.ttf": "/css/Phosphor.ttf",
     "/css/Phosphor.woff": "/css/Phosphor.woff",
     "/css/Phosphor.woff2": "/css/Phosphor.woff2",
-    "/fonts/RobotoCondensed-Italic-VariableFont_wght.ttf": "/fonts/RobotoCondensed-Italic-VariableFont_wght.ttf",
-    "/fonts/RobotoCondensed-VariableFont_wght.ttf": "/fonts/RobotoCondensed-VariableFont_wght.ttf"
+    "/fonts/Goldman-Bold.ttf": "/fonts/Goldman-Bold.ttf",
+    "/fonts/Goldman-Regular.ttf": "/fonts/Goldman-Regular.ttf"
 }

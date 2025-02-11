@@ -13,14 +13,11 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: 'Výkopové práce'
-        nesting: null
+        title: 'Zemní práce'
         type: page
-        url: null
         code: ''
         reference: '1'
         cmsPage: page
-        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -39,14 +36,11 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: 'Zahradnické práce'
-        nesting: null
+        title: 'Pozemní komunikace'
         type: page
-        url: null
         code: ''
         reference: '4'
         cmsPage: page
-        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''

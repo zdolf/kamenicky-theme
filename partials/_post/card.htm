@@ -1,9 +1,9 @@
 <div class="post post-card">
-    <a href="{{ item.url }}" class="position-relative d-flex flex-column gap-3">
+    <a href="{{ "page"|page({fullslug: 'reference'}) }}#{{ item.slug }}" class="position-relative d-flex flex-column gap-3">
         {% if image %}
             <p class="img mb-0 position-relative overflow-hidden">
                 {% if image.path %}
-                    <img src="{{ image.thumb(600, 400, {"mode": "crop"}) }}" alt="{{ image.description }}" class="img-fluid w-100">
+                    <img src="{{ image.thumb(600, 600, {"mode": "crop"}) }}" alt="{{ image.description }}" class="img-fluid w-100">
                 {% else %}
                     <img src="{{ image|media }}" alt="{{ image.description }}" class="img-fluid w-100">
                 {% endif %}

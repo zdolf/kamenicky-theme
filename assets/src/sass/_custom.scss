@@ -69,7 +69,7 @@ $spacers: (
 
 $line-height-base:                      1.5;
 
-$headings-font-family:                  $font-family-base;
+$headings-font-family:                  "Goldman", sans-serif;
 $headings-font-weight:                  $font-weight-bold;
 $headings-color:                        $black;
 
@@ -157,7 +157,7 @@ $nav-level-2-link-padding-x:            0;
 $nav-level-2-link-padding-y:            3px;
 $nav-level-2-link-after-height:         0;        // 0 for turn off
 
-$border-radius:                         10px;
+$border-radius:                         0px;
 $border-radius-lg:                      $border-radius * 1.5;
 $border-radius-sm:                      $border-radius * 0.8;
 
