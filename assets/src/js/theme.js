@@ -44,9 +44,9 @@ var sliderSwiper = new Swiper(".slider-swiper", {
     pagination: {
         el: ".swiper-pagination",
     },
-    autoplay: {
-        delay: 4000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
 });
 
 // var eventsSwiper = new Swiper(".events-swiper", {
@@ -87,40 +87,42 @@ var sliderSwiper = new Swiper(".slider-swiper", {
 //     },
 // });
 
-const scrollableSwiperWrapper = document.querySelector(".scrollable-swiper");
+const scrollableSwiperWrappers = document.querySelectorAll(".scrollable-swiper");
 
-if (scrollableSwiperWrapper) {
-    const slidesPerView = scrollableSwiperWrapper.dataset.slidesPerView;
-    const scrollableSwiper = new Swiper(".scrollable-swiper", {
-        modules: [Scrollbar],
-        scrollbar: {
-            el: ".swiper-scrollbar",
-            hide: false,
-        },
-        slidesPerView: 1,
-        spaceBetween: 48,
-        breakpoints: {
-            576: {
-                slidesPerView: Math.min(2, slidesPerView),
-                spaceBetween: 24,
+if (scrollableSwiperWrappers) {
+    scrollableSwiperWrappers.forEach((scrollableSwiperWrapper) => {
+        const slidesPerView = scrollableSwiperWrapper.dataset.slidesPerView;
+        const scrollableSwiper = new Swiper(scrollableSwiperWrapper, {
+            modules: [Scrollbar],
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: false,
             },
-            768: {
-                slidesPerView: Math.min(2, slidesPerView),
-                spaceBetween: 24,
+            slidesPerView: 1,
+            spaceBetween: 48,
+            breakpoints: {
+                576: {
+                    slidesPerView: Math.min(2, slidesPerView),
+                    spaceBetween: 24,
+                },
+                768: {
+                    slidesPerView: Math.min(2, slidesPerView),
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: Math.min(3, slidesPerView),
+                    spaceBetween: 48,
+                },
+                1200: {
+                    slidesPerView: Math.min(4, slidesPerView),
+                    spaceBetween: 48,
+                },
+                1400: {
+                    slidesPerView: slidesPerView,
+                    spaceBetween: 48,
+                },
             },
-            992: {
-                slidesPerView: Math.min(3, slidesPerView),
-                spaceBetween: 48,
-            },
-            1200: {
-                slidesPerView: Math.min(4, slidesPerView),
-                spaceBetween: 48,
-            },
-            1400: {
-                slidesPerView: slidesPerView,
-                spaceBetween: 48,
-            },
-        },
+        });
     });
 }
 

@@ -3,8 +3,14 @@
         {% for key, item in items %}
             {% set image = item.image ?: item.featured_images.first %}
 
+            {% if item.link %}
+                {% set link %}
+                    {{ item.link|link }}
+                {% endset %}
+            {% endif %}
+
             <div class="swiper-slide">
-                {% partial partial key=key item=item image=image %}
+                {% partial partial key=key item=item image=image link=link %}
             </div>
         {% endfor %}
     </div>
