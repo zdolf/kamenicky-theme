@@ -2,8 +2,8 @@ name: 'Web skeleton theme'
 description: 'Web skeleton theme.'
 author: 'Humlnet Creative'
 homepage: ''
-authorCode: zdolf
-code: kamenicky
+authorCode: HumlnetCreative
+code: web
 parent: ''
 database: '0'
 require:
@@ -12,6 +12,7 @@ require:
     - rainlab.blog
     - rainlab.translate
     - janvince.smallgdpr
+    - janvince.smallcontactform
     - lzaplata.gallery
     - lzaplata.files
     - lzaplata.extensions
@@ -29,12 +30,31 @@ form:
                 commentAbove: 'Pouze soubory typu PNG, SVG a WEBP jsou povoleny'
                 maxFiles: 1
                 tab: Nastavení
+            logo_sm:
+                label: Malé logo
+                type: fileupload
+                span: right
+                fileTypes: png, svg, webp
+                commentAbove: 'Pouze soubory typu PNG, SVG a WEBP jsou povoleny'
+                commentBelove: 'Toto logo je používané v patičce'
+                maxFiles: 1
+                tab: Nastavení
             mainmenu_dropdown:
                 label: Zobrazit 2. úroveň hlavního menu
                 type: switch
                 default: false
                 span: left
                 tab: Nastavení
+            copyright:
+                label: Copyright
+                type: text
+                span: left
+                tab: Nastavení
+            founder:
+                label: Zřizovatel
+                type: text
+                span: left
+                tab: Kontakt
             phone:
                 label: Telefon
                 type: text
@@ -80,10 +100,25 @@ form:
                 type: text
                 span: right
                 tab: Kontakt
+            databox:
+                label: Datavá schránka
+                type: text
+                span: left
+                tab: Kontakt
             company_registration:
                 label: Registrace
                 commentAbove: 'Text k registraci v firmy v živnostenském rejstříku'
                 type: textarea
+                tab: Kontakt
+            bank:
+                label: Banka
+                type: text
+                span: left
+                tab: Kontakt
+            account_number:
+                label: Číslo účtu
+                type: text
+                span: right
                 tab: Kontakt
             is_published:
                 label: Publikováno
@@ -91,7 +126,7 @@ form:
                 tab: 'Sociální sítě'
                 options:
                     header: Hlavička
-#                    footer: Patička
+                #                    footer: Patička
                 default: [header, footer]
             facebook:
                 label: Facebook

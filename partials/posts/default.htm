@@ -8,7 +8,7 @@
         {% set image = post.featured_images.first %}
 
         <div class="col">
-            {% partial partial item=post image=image %}
+            {% partial partial item=post image=image images=post.featured_images %}
         </div>
     {% endfor %}
 </div>

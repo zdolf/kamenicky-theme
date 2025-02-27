@@ -13,6 +13,8 @@
     "/css/lightgallery.css": "/css/lightgallery.css",
     "/css/theme.css": "/css/theme.css",
     "/css/icons.css": "/css/icons.css",
+    "/fonts/Goldman-Bold.ttf": "/fonts/Goldman-Bold.ttf",
+    "/fonts/Goldman-Regular.ttf": "/fonts/Goldman-Regular.ttf",
     "/fonts/OpenSans-Italic-Variable.ttf": "/fonts/OpenSans-Italic-Variable.ttf",
     "/fonts/OpenSans-Variable.ttf": "/fonts/OpenSans-Variable.ttf",
     "/fonts/RobotoCondensed-Italic-VariableFont_wght.ttf": "/fonts/RobotoCondensed-Italic-VariableFont_wght.ttf",
@@ -24,7 +26,5 @@
     "/css/Phosphor.svg": "/css/Phosphor.svg",
     "/css/Phosphor.ttf": "/css/Phosphor.ttf",
     "/css/Phosphor.woff": "/css/Phosphor.woff",
-    "/css/Phosphor.woff2": "/css/Phosphor.woff2",
-    "/fonts/Goldman-Bold.ttf": "/fonts/Goldman-Bold.ttf",
-    "/fonts/Goldman-Regular.ttf": "/fonts/Goldman-Regular.ttf"
+    "/css/Phosphor.woff2": "/css/Phosphor.woff2"
 }

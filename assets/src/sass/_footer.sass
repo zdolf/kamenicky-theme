@@ -5,12 +5,22 @@ footer
         background-color: $footer-bg
 
         .col
+            .logo
+                img
+                    max-width: 80%
+
             .toggler
                 color: $footer-toggler-color
                 transition: $transition-base
 
                 &.collapsed
                     transform: rotate(180deg)
+
+            .socials
+                a
+                    i:before
+                        color: $white !important
+                        font-size: 2.5rem !important
 
             .heading
                 color: $footer-heading-color
