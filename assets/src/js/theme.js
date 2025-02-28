@@ -44,9 +44,9 @@ var sliderSwiper = new Swiper(".slider-swiper", {
     pagination: {
         el: ".swiper-pagination",
     },
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
 });
 
 // var eventsSwiper = new Swiper(".events-swiper", {
